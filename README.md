@@ -6,6 +6,7 @@ Selfstarter makes it easy to roll your own crowdfunding site. To get started, fo
 ## Notes
 
 * This is a stripe implementation of Selfstarter.
+* Cards are charged automatically. This means you can build your product with the money pledged.
 * See settings.yml
 
 ## Background
@@ -14,8 +15,6 @@ After a [rejection from Kickstarter](http://techcrunch.com/2012/10/07/the-story-
 
 Selfstarter is a starting point. We made some specific choices with Selfstarter for Lockitron and we recommend you tailor it for your project:
 
-* We use Amazon Payments for payments. You can use [Stripe](https://stripe.com) or [WePay](https://www.wepay.com/). We used Kickstarter's awesome ```amazon_flex_pay``` gem.
-* We collect multi-use tokens from customers with Amazon Payments - this lets us collect payment information without charging the customer until we are ready to ship
 * Selfstarter doesn't come with any authentication, administration, mailers or analytics tools. We recommend adding a basic set of these so that you can message backers and manage orders.
 * There is a payment options component that allows you to define different packages or levels for people to puchase/support at.  You can turn it on and off with a configuration setting.
 
@@ -96,10 +95,6 @@ Something that we built into Lockitron.com was "Remind Me" functionality. The id
 There is no admin panel with Selfstarter. This could be useful when the project's funding time is over and you want to export your orders elsewhere.
 
 Relatedly, some analytics would be nice. It'd be good to know how many reservations you receive over time, as well as the specifics of each order. Customers may have questions or might want to modify their order after they've placed it.
-
-### Alternate Payment Processors
-
-Amazon Payments works great for us, but it may not work out for everyone. If you'd rather use Stripe, WePay, or any other payment processor, feel free to send out a pull request.
 
 ### Tests
 
