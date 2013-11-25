@@ -3,6 +3,11 @@ Selfstarter makes it easy to roll your own crowdfunding site. To get started, fo
 
 [See it in action](http://selfstarter.us)
 
+## Notes
+
+* This is a stripe implementation of Selfstarter.
+* See settings.yml
+
 ## Background
 
 After a [rejection from Kickstarter](http://techcrunch.com/2012/10/07/the-story-of-lockitron-crowdfunding-without-kickstarter/), we decided to follow in the footsteps of [App.net](https://app.net/) and make our own crowdfunding site for [Lockitron](https://lockitron.com). We've been absolutely blown away by the response. As a first step in what will hopefully be a long history of giving back, we have decided to open source the crowdfunding platform that got us here. Please send questions, comments, or concerns to [hello@lockitron.com](mailto:hello@lockitron.com)!
